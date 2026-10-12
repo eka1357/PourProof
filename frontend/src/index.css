@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: #0b1116;
+  --surface: #111a21;
+  --surface-raised: #19242c;
+  --border: #2a3943;
+  --text: #edf3f5;
+  --muted: #a0afb8;
+  --primary: #65d9c1;
+  --primary-foreground: #071310;
+  --info: #81b9ff;
+  --warning: #f3bf69;
+  --danger: #ff7777;
+  --success: #68d6a3;
+  --focus: #b3e9ff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tabular numerals for engineering precision display */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars for data tables and logs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111a21;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3943;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4e5b;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
